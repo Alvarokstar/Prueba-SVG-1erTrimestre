@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleta</title>
+    
+    <!-- Estilo CSS para la galleta -->
+    <style>
+        .muñeco {
+            fill: #cd803d;
+        }
+        .extremidades {
+            stroke: #cd803d;
+            stroke-width: 35px;
+            stroke-linecap: round;
+            
+        }
+        .boca {
+            fill: none;
+            stroke: white;
+            stroke-width: 5px;
+        }
+        .ojos {
+            fill: white;
+        }
+        .botones {
+            fill: red;
+        }
+    </style>
+</head>
+<body>
+    <svg width="200" height="300" xmlns="http://www.w3.org/2000/svg" style="background-color: beige;">
+        <!-- Cabeza, formada por un círculo -->
+        <circle cx="100" cy="60" r="50" class="muñeco" />
+        
+        <!-- Brazos, Piernas y Cuerpo, formados por 4 líneas sobrepuestas-->
+        <line x1="100" y1="120" x2="40" y2="120" class="extremidades" />
+        <line x1="155" y1="120" x2="40" y2="120" class="extremidades" />
+        
+        <line x1="90" y1="80" x2="80" y2="270" class="extremidades" />
+        <line x1="110" y1="80" x2="120" y2="270" class="extremidades" />
+        
+        <!-- Ojos, formado por 2 círculos -->
+        <circle cx="80" cy="50" r="5" class="ojos" />
+        <circle cx="120" cy="50" r="5" class="ojos" />
+        
+        <!-- Boca, formada por un rectángulo -->
+        <rect x="80" y="75" width="40" height="10" rx="5" ry="5" class="boca" />
+        
+        <!-- Botones, formados por 3 círculos -->
+        <circle cx="100" cy="140" r="7" class="botones" />
+        <circle cx="100" cy="160" r="7" class="botones" />
+        <circle cx="100" cy="180" r="7" class="botones" />
+    </svg>
+</body>
+</html>
